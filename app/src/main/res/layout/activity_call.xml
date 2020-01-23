@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drunk"
+    tools:context="com.example.cyrus.Call">
+
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="43dp"
+        android:background="@android:color/holo_purple"
+        android:text="我要叫車"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="選擇:"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="195dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="43dp" />
+
+    <TextView
+        android:id="@+id/aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        tools:layout_constraintTop_creator="1"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView27"
+        android:layout_marginLeft="26dp" />
+
+    <TextView
+        android:id="@+id/bb"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="24sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/call"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="86dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="86dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="311dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <Spinner
+            android:id="@+id/city"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@+id/textView14"
+            android:layout_toRightOf="@+id/textView14"
+            android:prompt="@string/city"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/taxi"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <Spinner
+            android:id="@+id/taxi"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/city"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/city"
+            android:layout_marginBottom="32dp"
+            android:prompt="@string/taxi"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/city"
+            app:layout_constraintRight_toRightOf="@+id/city"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_alignTop="@+id/taxi"
+            android:text="車隊"
+            android:textColor="@android:color/black"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/city"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:text="城市"
+            android:textColor="@android:color/black"
+            android:textSize="36sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

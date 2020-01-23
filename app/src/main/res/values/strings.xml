@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">醉佳檢測</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="info">說明</string>
+    <string name="ok">確定</string>
+    <string name="content">血液酒精濃度計算：\n輸入各項值後，按下開始計算，便會根據資料來判斷你酒醉的情形如何。\n\n平衡測試：\n按下開始測試後，請單腳站立，等剩餘時間歸零。\n\n反應測試：\n畫面會出現1-9，請盡快由1至9按下。\n\n說話測試：\n長按開始錄音，說出畫面出現的字。\n\n視力測試：\n畫面會出現一幅圖片，請輸入圖中數字。\n\n酒醉代駕：\n選擇資料後，按下我要叫車即可叫車。</string>
+    <string name="pass">成功通過測試</string>
+    <string name="fail">未能通過測試</string>
+    <string name="BAC">血液酒精濃度計算</string>
+    <string name="Balance">平衡測試</string>
+    <string name="Reaction">反應測試</string>
+    <string name="Blindness">視力測試</string>
+    <string name="Speak">說話測試</string>
+    <string name="city">縣市名稱</string>
+    <string name="taxi">車隊</string>
+    <string-array name="city">
+        <item>台北</item>
+        <item>桃園</item>
+        <item>台中</item>
+        <item>台南</item>
+        <item>高雄</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>男性</item>
+        <item>女性</item>
+    </string-array>
+
+    <string-array name="beer">
+        <item>啤酒</item>
+        <item>紅酒</item>
+        <item>烈酒</item>
+    </string-array>
+</resources>
